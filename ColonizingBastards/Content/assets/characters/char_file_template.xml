@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- XML Character Template -->
+
+<character name="Test-Boy">
+	<char_description >
+		<!-- Character information -->
+		<string name="CHARACTER_NAME">Test Boyens</string>
+		<string name="CHARACTER_DESCRIPTION">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</string>
+		<!-- Character configuration -->
+		<int name="CHARACTER_HP">100</int>
+		<float name="CHARACTER_SPEED">30.0</float>
+		<float name="CHARACTER_ACCELERATION">5</float>
+		<float name="CHARACTER_JUMP_SPEED">10</float>
+	</char_description>
+
+	<!-- Graphical representation of the character -->
+	<graphics>
+		<!-- Spritesheet (image) description -->
+		<spritesheet src="boy.png" num_rows="4" num_cols="12" >
+			<!-- Single sprite definition -->
+			<sprite name="treasure-box test-boy" row="2" column="4" />
+			<!-- Animation defined by start-end frame-->
+			<animation name="run" frame_seq="1,5" continuous="true" equal_dur="true" duration="1200" loopable=""/>
+			<!-- Animation defined by single frames (sprites and duration) -->
+			<animation name="dance" loopable="">
+				<frame_seq>
+					<sprites ids="1,2,1,1,2,5,5"/>
+					<duration ms="41,80,41,41,80,41,120"/>
+				</frame_seq>
+			</animation>
+		</spritesheet>
+	</graphics>
+</character>

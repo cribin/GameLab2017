@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- XML Character Template -->
+<graphics>
+  <!-- Spritesheet (image) description. Attribute "src" needs no file extension(png,jpg) -->
+  <spritesheet src="Snake" num_rows="4" num_cols="2" width="120" height="60">
+    <animation name="appear" msperframe="125" loopable="false">
+      <frame_seq>
+        <!-- 0 is the layer in the back -->
+        <sprites layer="0" ids="0,1,2,3,3,4,4,5,6,7"/>
+      </frame_seq>
+    </animation>
+  </spritesheet>
+  <!-- Hitbox description. Offset from top left corner of a single sprite. -->
+  <hitbox>
+    <x>20</x>
+    <y>20</y>
+    <width>70</width>
+    <height>40</height>
+  </hitbox>
+</graphics>

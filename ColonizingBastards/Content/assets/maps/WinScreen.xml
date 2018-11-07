@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="32" height="18" tilewidth="60" tileheight="60" nextobjectid="220">
+  <tileset firstgid="1" name="Background" tilewidth="1920" tileheight="1080" tilecount="1" columns="0">
+    <tile id="0">
+      <image width="1920" height="1080" source="WinScreen/Background.png"/>
+    </tile>
+  </tileset>
+  <tileset firstgid="2" name="Foreground" tilewidth="1920" tileheight="1080" tilecount="1" columns="0">
+    <tile id="0">
+      <image source="Vignette.png"/>
+    </tile>
+  </tileset>
+  <tileset firstgid="3" name="Message" tilewidth="1035" tileheight="908" tilecount="1" columns="0">
+    <tile id="1">
+      <image width="1035" height="908" source="WinScreen/Message.png"/>
+    </tile>
+  </tileset>
+  <tileset firstgid="5" name="PlayerWin" tilewidth="205" tileheight="274" tilecount="4" columns="0">
+    <tile id="0">
+      <image width="205" height="274" source="WinScreen/Player1Win.png"/>
+    </tile>
+    <tile id="1">
+      <image width="205" height="274" source="WinScreen/Player2Win.png"/>
+    </tile>
+    <tile id="2">
+      <image width="205" height="274" source="WinScreen/Player3Win.png"/>
+    </tile>
+    <tile id="3">
+      <image width="205" height="274" source="WinScreen/Player4Win.png"/>
+    </tile>
+  </tileset>
+  <tileset firstgid="9" name="PlayerLose" tilewidth="205" tileheight="274" tilecount="4" columns="0">
+    <tile id="0">
+      <image width="205" height="274" source="WinScreen/Player1Lose.png"/>
+    </tile>
+    <tile id="1">
+      <image width="205" height="274" source="WinScreen/Player2Lose.png"/>
+    </tile>
+    <tile id="2">
+      <image width="205" height="274" source="WinScreen/Player3Lose.png"/>
+    </tile>
+    <tile id="3">
+      <image width="205" height="274" source="WinScreen/Player4Lose.png"/>
+    </tile>
+  </tileset>
+  <tileset firstgid="13" name="PlayerNotPlayed" tilewidth="205" tileheight="274" tilecount="4" columns="0">
+    <tile id="0">
+      <image width="205" height="274" source="WinScreen/Player1NotPlayed.png"/>
+    </tile>
+    <tile id="1">
+      <image width="205" height="274" source="WinScreen/Player2NotPlayed.png"/>
+    </tile>
+    <tile id="2">
+      <image width="205" height="274" source="WinScreen/Player3NotPlayed.png"/>
+    </tile>
+    <tile id="3">
+      <image width="205" height="274" source="WinScreen/Player4NotPlayed.png"/>
+    </tile>
+  </tileset>
+  <objectgroup name="Background">
+    <object id="5" gid="1" x="0" y="1080" width="1920" height="1080"/>
+  </objectgroup>
+  <objectgroup name="Foreground">
+    <object id="8" gid="2" x="0" y="1080" width="1920" height="1080"/>
+  </objectgroup>
+  <objectgroup name="UI">
+    <object id="203" gid="4" x="480" y="1000" width="993" height="940"/>
+  </objectgroup>
+  <objectgroup name="FinalScorePos">
+    <object id="217" x="720" y="660" width="81" height="60"/>
+    <object id="213" x="870" y="659" width="81" height="60"/>
+    <object id="218" x="1020" y="660" width="81" height="60"/>
+    <object id="219" x="1170" y="660" width="81" height="60"/>
+  </objectgroup>
+  <objectgroup name="PlayerNotPlayed" visible="0">
+    <object id="197" gid="13" x="660" y="660" width="180" height="240"/>
+    <object id="198" gid="14" x="840" y="660" width="180" height="240"/>
+    <object id="199" gid="15" x="960" y="660" width="180" height="240"/>
+    <object id="200" gid="16" x="1140" y="660" width="180" height="240"/>
+  </objectgroup>
+  <objectgroup name="PlayerLose" visible="0">
+    <object id="193" gid="9" x="660" y="660" width="180" height="240"/>
+    <object id="194" gid="10" x="840" y="660" width="180" height="240"/>
+    <object id="195" gid="11" x="960" y="660" width="180" height="240"/>
+    <object id="196" gid="12" x="1140" y="660" width="180" height="240"/>
+  </objectgroup>
+  <objectgroup name="PlayerWin">
+    <object id="188" gid="5" x="660" y="660" width="180" height="240"/>
+    <object id="190" gid="6" x="840" y="660" width="180" height="240"/>
+    <object id="191" gid="7" x="960" y="660" width="180" height="240"/>
+    <object id="192" gid="8" x="1140" y="660" width="180" height="240"/>
+  </objectgroup>
+</map>

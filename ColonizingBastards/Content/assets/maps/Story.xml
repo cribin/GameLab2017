@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="32" height="18" tilewidth="60" tileheight="60" nextobjectid="206">
+ <tileset firstgid="1" name="Background" tilewidth="1920" tileheight="1080" tilecount="1" columns="0">
+  <tile id="0">
+   <image width="1920" height="1080" source="Story/Background.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="Foreground" tilewidth="1920" tileheight="1080" tilecount="1" columns="0">
+  <tile id="0">
+   <image width="1920" height="1080" source="Vignette.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" name="Message" tilewidth="1035" tileheight="738" tilecount="1" columns="0">
+  <tile id="2">
+   <image width="1035" height="738" source="Story/StoryMessage.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="HoldAToSkip" tilewidth="274" tileheight="50" tilecount="1" columns="0">
+  <tile id="0">
+   <image width="274" height="50" source="Story/PressAToSkip.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="Background">
+  <object id="5" gid="1" x="0" y="1080" width="1920" height="1080"/>
+ </objectgroup>
+ <objectgroup name="Foreground">
+  <object id="8" gid="2" x="0" y="1080" width="1920" height="1080"/>
+ </objectgroup>
+ <objectgroup name="UI">
+  <object id="205" gid="5" x="431" y="849" width="1035" height="738"/>
+ </objectgroup>
+ <objectgroup name="PressAToSkip">
+  <object id="203" gid="6" x="827" y="957" width="274" height="50"/>
+ </objectgroup>
+</map>

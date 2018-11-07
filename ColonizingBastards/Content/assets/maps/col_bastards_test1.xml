@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="25" tilewidth="32" tileheight="32" nextobjectid="33">
+ <tileset firstgid="1" name="Images" tilewidth="1380" tileheight="820" tilecount="3" columns="0">
+  <tile id="0">
+   <image source="greenTile.png"/>
+  </tile>
+  <tile id="1">
+   <image source="jungle-backgrounds.jpg"/>
+  </tile>
+  <tile id="2">
+   <image source="redTile.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="Background">
+  <object id="1" gid="2" x="0" y="800" width="960" height="800"/>
+ </objectgroup>
+ <objectgroup name="Forground">
+  <object id="3" gid="1" x="352" y="608" width="160" height="64"/>
+  <object id="4" gid="1" x="608" y="512" width="160" height="64"/>
+  <object id="5" gid="3" x="800" y="384" width="127" height="64"/>
+  <object id="6" gid="3" x="640" y="256" width="63" height="64"/>
+ </objectgroup>
+ <objectgroup name="Collisionlayer">
+  <object id="7" x="352" y="544">
+   <polygon points="0,0 0,64 160,64 160,0"/>
+  </object>
+  <object id="8" x="608" y="448">
+   <polygon points="0,0 0,64 160,64 160,0"/>
+  </object>
+  <object id="9" x="800" y="320">
+   <polygon points="0,0 0,64 128,64 128,0"/>
+  </object>
+  <object id="10" x="640" y="192">
+   <polygon points="0,0 0,64 64,64 64,0"/>
+  </object>
+  <object id="23" x="0" y="704">
+   <polygon points="0,0 64,0 96,-64 0,-64"/>
+  </object>
+  <object id="24" x="0" y="640">
+   <polygon points="0,0 96,0 192,-128 64,-128 0,-192"/>
+  </object>
+  <object id="25" x="0" y="448">
+   <polygon points="0,0 64,64 192,64 0,-160"/>
+  </object>
+  <object id="27" x="736" y="640">
+   <polygon points="0,0 0,64 128,64 128,0"/>
+  </object>
+  <object id="28" x="864" y="640">
+   <polygon points="0,0 32,-96 96,-96 96,64 0,64"/>
+  </object>
+  <object id="31" x="0" y="736">
+   <polygon points="0,0 0,64 192,64 224,-32"/>
+  </object>
+  <object id="32" x="192" y="800">
+   <polygon points="0,0 32,-96 480,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="PlayerSpawn">
+  <object id="11" x="128" y="640" width="64" height="64"/>
+ </objectgroup>
+</map>

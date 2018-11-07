@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML Character Template -->
+<character name="Test-Boy">
+	<char_description >
+		<!-- Character information -->
+		<CHARACTER_NAME>Test Boyens</CHARACTER_NAME>
+		<CHARACTER_DESCRIPTION>Lorem ipsum dolor sit amet</CHARACTER_DESCRIPTION>
+		<!-- Character configuration -->
+	</char_description>
+	<!-- Graphical representation of the character -->
+	<graphics>
+		<!-- Spritesheet (image) description. Attribute "src" needs no file extension(png,jpg) -->
+		<spritesheet src="AnimationSystem" num_rows="6" num_cols="8" width="121" height="121">
+			<animation name="climb" msperframe="125" loopable="true">
+				<frame_seq>
+					<!-- 0 is the layer in the back -->
+          <!--
+            0 = arm back
+            1 = loot
+            2 = body
+            3 = arm front
+          -->
+					<sprites layer="0" ids="0,1,2,3,2,1"/>
+          <sprites layer="1" ids="44,44,44,44,44,44"/>
+          <sprites layer="2" ids="31,32,33,34,33,32"/>
+          <sprites layer="3" ids="15,16,17,18,17,16"/>
+				</frame_seq>
+			</animation>
+      <animation name="climbidle" msperframe="125" loopable="true">
+				<frame_seq>
+					<!-- 0 is the layer in the back -->
+					<sprites layer="0" ids="4"/>
+          <sprites layer="1" ids="44"/>
+          <sprites layer="2" ids="35"/>
+          <sprites layer="3" ids="19"/>
+				</frame_seq>
+			</animation>
+      <animation name="fall" msperframe="125" loopable="true">
+				<frame_seq>
+					<!-- 0 is the layer in the back -->
+					<sprites layer="0" ids="5"/>
+          <sprites layer="1" ids="44"/>
+          <sprites layer="2" ids="36"/>
+          <sprites layer="3" ids="20"/>
+				</frame_seq>
+			</animation>
+      <animation name="idle" msperframe="125" loopable="true">
+				<frame_seq>
+					<!-- 0 is the layer in the back -->
+					<sprites layer="0" ids="0,0,0,6,0,0"/>
+          <sprites layer="1" ids="44,44,44,44,44,44"/>
+          <sprites layer="2" ids="37,37,38,38,38,37"/>
+          <sprites layer="3" ids="21,21,21,22,21,21"/>
+				</frame_seq>
+			</animation>
+      <animation name="jump" msperframe="125" loopable="true">
+				<frame_seq>
+					<!-- 0 is the layer in the back -->
+					<sprites layer="0" ids="7"/>
+          <sprites layer="1" ids="44"/>
+          <sprites layer="2" ids="39"/>
+          <sprites layer="3" ids="23"/>
+				</frame_seq>
+			</animation>
+      <animation name="run" msperframe="125" loopable="true">
+				<frame_seq>
+					<!-- 0 is the layer in the back -->
+					<sprites layer="0" ids="8,9,10,11,10,9"/>
+          <sprites layer="1" ids="44,44,44,44,44,44"/>
+          <sprites layer="2" ids="40,41,42,43,42,41"/>
+          <sprites layer="3" ids="27,28,29,30,29,28"/>
+				</frame_seq>
+			</animation>
+      <animation name="shoot" msperframe="125" loopable="false">
+				<frame_seq>
+					<!-- 0 is the layer in the back -->
+					<sprites layer="0" ids="12,13,14"/>
+				</frame_seq>
+			</animation>
+      <animation name="machete" msperframe="125" loopable="false">
+				<frame_seq>
+					<!-- 0 is the layer in the back -->
+          <sprites layer="3" ids="24,25,26"/>
+				</frame_seq>
+			</animation>
+		</spritesheet>
+	</graphics>
+</character>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- XML Spritesheet Template -->
+<graphics>
+<!-- Spritesheet (image) description. Attribute "src" needs no file extension(png,jpg) -->
+<spritesheet src="UndergrowthAnimation" num_rows="8" num_cols="4" width="60" height="60">
+  <animation name="Undergrowth01" msperframe="125" loopable="false" random="true" duration="1250">
+	<frame_seq>
+	  <!-- 0 is the layer in the back -->
+	  <sprites layer="0" ids="0,1,2,3,4,5,6,7,8,9"/>
+	</frame_seq>
+  </animation>
+  <animation name="Undergrowth02" msperframe="125" loopable="false" random="true" duration="1250">
+	<frame_seq>
+	  <!-- 0 is the layer in the back -->
+	  <sprites layer="0" ids="10,11,12,13,14,15,16,17,18,19"/>
+	</frame_seq>
+  </animation>
+  <animation name="Undergrowth03" msperframe="125" loopable="false" random="true" duration="1250">
+	<frame_seq>
+	  <!-- 0 is the layer in the back -->
+	  <sprites layer="0" ids="20,21,22,23,24,25,26,27,28,29"/>
+	</frame_seq>
+  </animation>
+</spritesheet>
+<!-- Hitbox description. Offset from top left corner of a single sprite. -->
+<hitbox>
+  <x>0</x>
+  <y>0</y>
+  <width>60</width>
+  <height>60</height>
+</hitbox>
+</graphics>

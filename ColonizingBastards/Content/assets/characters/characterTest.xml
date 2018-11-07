@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- XML Character Template -->
+
+<character name="Test-Boy">
+
+  <char_type>default</char_type>
+  
+	<char_description >
+		<!-- Character information -->
+		<CHARACTER_NAME>Test Boy</CHARACTER_NAME>
+		<CHARACTER_DESCRIPTION>Lorem ipsum dolor sit amet</CHARACTER_DESCRIPTION>
+		
+	</char_description>
+
+	<!-- Graphical representation of the character -->
+	<graphics>
+		<!-- Spritesheet (image) description -->
+		<spritesheet src="link_spritesheet" num_rows="8" num_cols="10" >
+			<!-- Single sprite definition -->
+			<sprite name="treasure-box test-boy" id="2"  />
+			<!-- Animation defined by start-end frame-->
+      <animation name="idle" frame_seq="0,2" msperframe="200" loopable="true"/>
+			<animation name="walk_left" frame_seq="50,59" msperframe="200" loopable="true"/>
+      <animation name="walk_right" frame_seq="70,79" msperframe="200" loopable="true"/>
+			<!-- Animation defined by single frames (sprites and duration) -->
+			<animation name="dance" msperframe="20" loopable="false">
+				<frame_seq>
+          <sprites layer="0" ids="1,2,1,1,2,5,5"/>
+          <sprites layer="1" ids="7,8,7,7,8,11,11"/>					
+				</frame_seq>
+			</animation>
+		</spritesheet>
+	</graphics>
+</character>
